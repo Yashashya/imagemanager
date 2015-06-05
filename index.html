@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ImageManager</title>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/imagemanager.css" />
+<link rel="stylesheet" href="css/image-picker.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/imagemanager.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="fluid-container">
+<div class="jumbotron">
+<h1>Image Manager</h1>
+<p>To manage uploaded images in forms</p>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+
+ <div class="form-group">
+                                                                <div class="imagemanager"></div>
+                                                            </div>
+</div>
+
+</div>
+</div>
+
+<script>
+$('.imagemanager').imagemanager({
+		ajaxLink:'./images.html',
+		multiSelect:true,
+		inputTagName: "imager[]"	
+		
+	});
+
+</script>
+</body>
+</html>
+
